@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="mx-auto max-w-[1280px] px-5 pt-6 lg:px-8">
       <div className=" flex justify-between min-h-[420px] overflow-hidden rounded-2xl border border-[#22262f] bg-[#121419]">
-        <div className="relative  flex min-h-[420px] items-center px-7 py-12 sm:px-12 lg:w-[67%] lg:px-14">
+        <div className="relative  flex flex-col lg:flex-row md:flex-row  min-h-[420px] items-center px-7 py-12 sm:px-12 lg:w-[67%] lg:px-14">
           <div>
             <p className="mb-5 text-[11px] font-black tracking-[0.25em] text-[#c8ff00]">
               WORKOUT LIBRARY

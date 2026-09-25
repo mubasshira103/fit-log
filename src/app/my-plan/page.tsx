@@ -72,7 +72,7 @@ export default function MyPlanClient() {
                 tab === "plan" ? "bg-[#c8ff00] text-black" : "text-[#777d88] hover:text-white"
               }`}
             >
-              Today&apos s Plan
+              Today's Plan
             </button>
             <button
               onClick={() => setTab("saved")}
