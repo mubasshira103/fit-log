@@ -30,12 +30,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <div >
-          <div className='w-full p-8'>
+        <div>
+          <div className="w-full p-8">
             <Image src={img} width={400} height={400} alt="Workout illustration" />
-          </div>
-          <div className="absolute bottom-10 right-10 flex h-14 w-14 items-center justify-center rounded-full border border-[#c8ff00]/30 bg-[#c8ff00]/10">
-            <Dumbbell className="h-6 w-6 text-[#c8ff00]" />
           </div>
         </div>
       </div>
