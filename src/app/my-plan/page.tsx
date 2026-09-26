@@ -7,6 +7,7 @@ import type { SortKey, Workout } from '@/lib/types';
 import PlanWorkoutCard from '@/components/PlanWorkoutCard';
 import { usePlan } from '@/components/PlanProvider';
 import Link from 'next/link';
+import toast from 'react-hot-toast';
 
 type Tab = 'plan' | 'saved';
 
@@ -43,16 +44,16 @@ export default function MyPlanClient() {
   function handleRemove(id: number) {
     if (tab === 'plan') {
       removeFromPlan(id);
-      alert("Removed from today's plan");
+      toast.error("Removed from today's plan");
     } else {
       removeFromSaved(id);
-      alert('Removed from saved');
+      toast.error('Removed from saved');
     }
   }
 
   function handleDone(id: number) {
     markDone(id);
-    alert('Workout marked as done');
+    toast.success('Workout marked as done');
   }
   if (!mounted) {
     return null;
